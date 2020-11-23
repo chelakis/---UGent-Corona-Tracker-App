@@ -1,6 +1,6 @@
 # Information Security Project - UGent 
 ## Create a secure corona tracker web app
-**More info at the documentation folder** [here](documentation/README.md)
+More info at the documentation folder [**here**](documentation/README.md)
 
 
 ## Quick Steps:
