@@ -1,5 +1,7 @@
 # Information Security Project - UGent 
-## Create a secure corona tracker web app
+
+This repo contains the project of the Information Security course of Ghent University. The scope of the project is to create a web application that safely logs a close contact between users and informs them if anybody that has recently contacted with is positive to COVID-19.
+
 More info at the documentation folder [**here**](documentation/README.md)
 
 
