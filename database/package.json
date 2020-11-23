@@ -1,0 +1,12 @@
+{
+  "name": "infsec-db-gen",
+  "version": "1.0.0",
+  "main": "populate.js.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node populate.js"
+  },
+  "dependencies": {
+    "pg": "^7.18.2"
+  }
+}

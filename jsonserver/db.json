@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "status": "Diagnosed Positive"
+    },
+    {
+      "id": "2",
+      "status": "Healthy"
+    },
+    {
+      "id": "3",
+      "status": "At Risk"
+    }
+  ]
+}

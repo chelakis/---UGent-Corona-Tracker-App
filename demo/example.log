@@ -1,0 +1,235 @@
+ [Online Approach] starting demo
+ [Online Approach] registering users
+ [user a] registering and authorizing
+   [external] verifying user identity on external authorization service
+   [external] user has been authorized
+   [external] user uuid: 137
+   [external] user register token: 4d93ed5d528ea2e024687465abf4e991638014b3fd52bc70c83a96ec416b1c6df54293b528ae3a827974f9d8f06be1c2
+   [api] authorizing user for first time
+   [api] user has been authorized and given auth token: 56b9b7cb5759aa194a7d3f80c4da70f9:13a6b83478ec2a14f294eebf1eb36cb1da073532c9945c70d9d5fe9516b31e8199f25c063b40018d22a63c286e51de4f81c32371042b80923a6bfd6f6c60f16391231a777a0387a57dc43529d755c25ba73d3ec904aa808ec3c5a0cd52427719a2ebcd387d623caac0dc64aab94e64b882327b58b4cd9431f1e518325591279391d2e442da247ce4627c1b8aacef810b3664a9f9725cce01451e4cb11247e200
+ [user b] registering and authorizing
+   [external] verifying user identity on external authorization service
+   [external] user has been authorized
+   [external] user uuid: 138
+   [external] user register token: d6a51ef4b5329ff80f686975dc6b1d8b3c71622cb63e7c4d3d53eb361beaa579d4c933a6d9e992885f238b07a336224b
+   [api] authorizing user for first time
+   [api] user has been authorized and given auth token: a6864db051489bc2ba74bab3c1e8074b:083fdb583d8ea6cda4d3b1d7594261cc14f5aeccbe7274988cd07f6aa2efce6340f41d2fcd008910ff4bf24307166ca770efeb0138dc724c3172eba3be67509d16efca70da582b6a5eef3c365b28c72a8dac612be7b2bb2166f4b2f77c54794e8d81ab0085e20816066874b43b48326a12dbb41b7a4daf45aee2c6f130c901f9229210ca235d9be85038c5866fe3564d7b68c8d13dd62cfea7b64feec4cda2ac
+ [Online Approach] retrieving status before interaction
+ [user a] requesting status
+   [api] status retrieved
+   [api] risk: 0
+   [api] message: safe
+ [user b] requesting status
+   [api] status retrieved
+   [api] risk: 0
+   [api] message: safe
+ [Online Approach] user b gets positively diagnosed
+ [manual] setting user b status to positive
+ [user b] confirming status
+   [api] status retrieved
+   [api] risk: 1
+   [api] message: high risk
+ [Online Approach] logging an interaction
+ [user a] requesting challenge token
+   [api] challenge token generated: a251f0cdc3575177b402e5aa1058604f:d412b13d62946000426b6321af6e9af0b5b2ec32099b1d3744dcf6d7afe51ef1c2fc353584f1249543e59162d7229eb1ad50b79ba69aff758d1c8595bcc4f752474fbc4a921fded888d2cedb08df056932d3a556303009fd984c973414349b8731661b571d74e7e0d1b4134abd9869579f7838521cf2b73bac99b4b8ea14cd35daba5dd3d4ef16ec5f6a77a05507f5fa849b604624634749ec4a9585589e185fda76f48d54181ee9dbe4829e8e15c2a722537a4c201f03a3446a1fd6cc12d5e7
+ [user a] sending challenge token to user b
+   [air] message travelling: a251f0cdc3575177b402e5aa1058604f:d412b13d62946000426b6321af6e9af0b5b2ec32099b1d3744dcf6d7afe51ef1c2fc353584f1249543e59162d7229eb1ad50b79ba69aff758d1c8595bcc4f752474fbc4a921fded888d2cedb08df056932d3a556303009fd984c973414349b8731661b571d74e7e0d1b4134abd9869579f7838521cf2b73bac99b4b8ea14cd35daba5dd3d4ef16ec5f6a77a05507f5fa849b604624634749ec4a9585589e185fda76f48d54181ee9dbe4829e8e15c2a722537a4c201f03a3446a1fd6cc12d5e7
+ [user b] requesting response token with received challenge token
+   [api] response token generated: 20746f97f3bc354c3a7b0ccfca902076:aee3c59d15350c1b68b23b7aaeb7afc096a62c0b07b692604a786bfbf7f212023ea4777f5efd0b2f6f7ba4b665e59d7fd67db28af8ac843239f0e51ff914a9dc8cfcbd2ee680e36cadbc804d5fb74bb0b1427dad39168c13cbb3aa4e60522cb84f027eec0a6fcd8279be91d8abdd9d1570da2dce6e5a31edccf486dcef502a3d341e7286a9086572954201c6bd6ccb8ee812b2a6cad648b4fd3c10e6070a4c6b4b3ee78ffcc7e8a1f827de4dcdc85c1ce4a46edb576882543d61f967d5b89eaaa1733508120ffb438f7835afcd799469
+ [user b] sending response token to user a
+   [air] message travelling: 20746f97f3bc354c3a7b0ccfca902076:aee3c59d15350c1b68b23b7aaeb7afc096a62c0b07b692604a786bfbf7f212023ea4777f5efd0b2f6f7ba4b665e59d7fd67db28af8ac843239f0e51ff914a9dc8cfcbd2ee680e36cadbc804d5fb74bb0b1427dad39168c13cbb3aa4e60522cb84f027eec0a6fcd8279be91d8abdd9d1570da2dce6e5a31edccf486dcef502a3d341e7286a9086572954201c6bd6ccb8ee812b2a6cad648b4fd3c10e6070a4c6b4b3ee78ffcc7e8a1f827de4dcdc85c1ce4a46edb576882543d61f967d5b89eaaa1733508120ffb438f7835afcd799469
+ [user a] logging interaction with received response token
+   [api] response token submitted
+ [Online Approach] retrieving status after interaction
+ [user a] requesting status
+   [api] status retrieved
+   [api] risk: 1
+   [api] message: high risk
+ [user b] requesting status
+   [api] status retrieved
+   [api] risk: 0.999999000001
+   [api] message: high risk
+ [Offline Approach] starting demo
+ [user a] registering and authorizing
+   [external] verifying user identity on external authorization service
+   [external] user has been authorized
+   [external] user uuid: 139
+   [external] user register token: 1c49115a38445388c2fb25048cc6d5a43ad11d2362358ba4c6a974685fa173c40d98f98a2a4a7545e91d22bad53adb0b
+   [api] authorizing user for first time
+   [api] user has been authorized and given auth token: 924182e2f6aa9e5b5c9425dc54ee9701:03899fd77b8243813afce027423fd63a15576d8971b7499b42ce7aeb2257b884c69b4b19434ca0b736c7bfafa5a249ed3a998aca1df4dcbc000fc6275f4f31fd62edff0efe723464075eb09a3a207f6490b437d96b6fc950508c5e18a9674f8a0bde2c53def9795c3a50d7c62ddd32ae5b94bb44f10e7db703f86b8a32e0b55a99d7bf48e7b0171da85dbcb18c6561e65e2836c858a7709fee048d2e9e4e2c75
+ [user b] registering and authorizing
+   [external] verifying user identity on external authorization service
+   [external] user has been authorized
+   [external] user uuid: 140
+   [external] user register token: 1ec4ac48b72589018ba3cfe233f132e36f52ae44067449435c1da518ea18b11a42885cf5d9d1684ab8f47dbfa611a617
+   [api] authorizing user for first time
+   [api] user has been authorized and given auth token: c9c4831fd1838d319be72fd1a3201fe3:433a42c6e616c92abfbde8036a3dd4f4e5eefbd487aa7bad5588a86b9f2a00ce350194c7b35193fb5b8e0b6ee2a2599f9b46b6d4a1e3850c95a1fd4b73c3cba2720e588815cbf0c03ebfc1e410952b0fd91981c68175351ace1c493f643e712bffcfc6a9ba9b4da2b9004286779f5e312e47a4b78e5551c6e7e367cd4546a23a5889f0b390a491fa92fe154cc92253bc9ce21c8723b727eb04b98cbea35c3bac
+ [Offline Approach] retrieving status before interaction
+ [user a] requesting status
+   [api] status retrieved
+   [api] risk: 0
+   [api] message: safe
+ [user b] requesting status
+   [api] status retrieved
+   [api] risk: 0
+   [api] message: safe
+ [online approach] user b gets positively diagnosed
+ [manual] setting user b status to positive
+ [user b] confirming status
+   [api] status retrieved
+   [api] risk: 1
+   [api] message: high risk
+ [Offline Approach] creating beacon keys
+ [beacon 1] generating key
+ [beacon 2] generating key
+ [user a] registering beacon to user
+   [api] registering beacon
+   [api] Successfully added beacon
+ [user b] registering beacon to user
+   [api] registering beacon
+   [api] Successfully added beacon
+ [beacon 1] transmitting token
+   [beacon] beacon requesting response token at 1
+   [beacon] retrieved beacon response token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjEsImJlYWNvbktleSI6LTM2NjQzODI2NCwiaWF0IjoxNTg5NjUzMTA5fQ.okHujBPi3qx-IkLjX91WkjIpZJd22LzJCB3qbVLURVI
+   [air] message travelling: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjEsImJlYWNvbktleSI6LTM2NjQzODI2NCwiaWF0IjoxNTg5NjUzMTA5fQ.okHujBPi3qx-IkLjX91WkjIpZJd22LzJCB3qbVLURVI
+ [user b] beacon token received, sending to database
+   [api] successfully added interaction
+ [Offline Approach] retrieving status after interaction
+ [user a] requesting status
+   [api] status retrieved
+   [api] risk: 1
+   [api] message: high risk
+ [user b] requesting status
+   [api] status retrieved
+   [api] risk: 0.999999000001
+   [api] message: high risk
+ [Online Approach] starting demo
+ [Online Approach] registering users
+ [user a] registering and authorizing
+   [external] verifying user identity on external authorization service
+   [external] user has been authorized
+   [external] user uuid: 167
+   [external] user register token: 82748d1c3edc797603e9c0283b3ee225957fe798ca73e15398e5d1ddcdaf2389c0a4bd0eb3c30e357a6ada4a97db89cb
+   [api] authorizing user for first time
+   [api] using token supplied by when user was identified: 82748d1c3edc797603e9c0283b3ee225957fe798ca73e15398e5d1ddcdaf2389c0a4bd0eb3c30e357a6ada4a97db89cb
+   [api] user has been authorized and given auth token: 206497cd28d9dfc107f0a7e5b259b4a8:dce90392b8c36c184fe88a846f002463c156be8f7ebf2cecae614fa47f8ba1e748f6f1e5a306c7b9b38e0b85ac146dafed898e86123a16da996dbd5feddc2d3cd7f7e5c684bab2719f8266b1c673d930e9eb3e45a52f00047bad2a2b3245e8837085c0e0c68ecce957969ed553f78034089515c7b909b56633553c778d607282c9325f4ebe1ecf1eaffb0af2521a5d14e2b7693cb85fd6b250a9320067643e23
+ [user b] registering and authorizing
+   [external] verifying user identity on external authorization service
+   [external] user has been authorized
+   [external] user uuid: 168
+   [external] user register token: f09836dfec57cf54f28cadeb5dd3a4b829691d73c1bd1f41297551c7de7ec178a38dde856dcf7d21075b13ee93f8dfae
+   [api] authorizing user for first time
+   [api] using token supplied by when user was identified: f09836dfec57cf54f28cadeb5dd3a4b829691d73c1bd1f41297551c7de7ec178a38dde856dcf7d21075b13ee93f8dfae
+   [api] user has been authorized and given auth token: 58f73354c22e8072e3f454e5aeacb6db:9e12241d16a39c5163b7e97ff670a0084ed970151d42ec187453f7718c4f0b5609ce90077d88fe515ff9ac06ec3b113bf2e0d6b4702cc896b64511383d767ff7711655e269be1d937c12abeaf0d93058d6b1aa7643635da98981a993834cddc4f2eb6fb5bd8bcb2621a018b1cf5d7ab7211522aaafbc8b7b978831ab3c8bc991dd3274ebdfc44efb6a5417c667039083303512ba8638dcb13acde22d4ea386da
+ [Online Approach] retrieving status before interaction
+ [user a] requesting status
+   [api] retrieving user status with auth: Bearer 206497cd28d9dfc107f0a7e5b259b4a8:dce90392b8c36c184fe88a846f002463c156be8f7ebf2cecae614fa47f8ba1e748f6f1e5a306c7b9b38e0b85ac146dafed898e86123a16da996dbd5feddc2d3cd7f7e5c684bab2719f8266b1c673d930e9eb3e45a52f00047bad2a2b3245e8837085c0e0c68ecce957969ed553f78034089515c7b909b56633553c778d607282c9325f4ebe1ecf1eaffb0af2521a5d14e2b7693cb85fd6b250a9320067643e23
+   [api] status retrieved
+   [api] risk: 0
+   [api] message: safe
+ [user b] requesting status
+   [api] retrieving user status with auth: Bearer 58f73354c22e8072e3f454e5aeacb6db:9e12241d16a39c5163b7e97ff670a0084ed970151d42ec187453f7718c4f0b5609ce90077d88fe515ff9ac06ec3b113bf2e0d6b4702cc896b64511383d767ff7711655e269be1d937c12abeaf0d93058d6b1aa7643635da98981a993834cddc4f2eb6fb5bd8bcb2621a018b1cf5d7ab7211522aaafbc8b7b978831ab3c8bc991dd3274ebdfc44efb6a5417c667039083303512ba8638dcb13acde22d4ea386da
+   [api] status retrieved
+   [api] risk: 0
+   [api] message: safe
+ [Online Approach] user b gets positively diagnosed
+ [manual] setting user b status to positive
+ [user b] confirming status
+   [api] retrieving user status with auth: Bearer 58f73354c22e8072e3f454e5aeacb6db:9e12241d16a39c5163b7e97ff670a0084ed970151d42ec187453f7718c4f0b5609ce90077d88fe515ff9ac06ec3b113bf2e0d6b4702cc896b64511383d767ff7711655e269be1d937c12abeaf0d93058d6b1aa7643635da98981a993834cddc4f2eb6fb5bd8bcb2621a018b1cf5d7ab7211522aaafbc8b7b978831ab3c8bc991dd3274ebdfc44efb6a5417c667039083303512ba8638dcb13acde22d4ea386da
+   [api] status retrieved
+   [api] risk: 1
+   [api] message: high risk
+ [Online Approach] logging an interaction
+ [user a] requesting challenge token
+   [api] requesting challenge from backend: Bearer 206497cd28d9dfc107f0a7e5b259b4a8:dce90392b8c36c184fe88a846f002463c156be8f7ebf2cecae614fa47f8ba1e748f6f1e5a306c7b9b38e0b85ac146dafed898e86123a16da996dbd5feddc2d3cd7f7e5c684bab2719f8266b1c673d930e9eb3e45a52f00047bad2a2b3245e8837085c0e0c68ecce957969ed553f78034089515c7b909b56633553c778d607282c9325f4ebe1ecf1eaffb0af2521a5d14e2b7693cb85fd6b250a9320067643e23
+   [api] challenge token generated: 28a7113d26dd8725e3d16afd69949880:432dccd6e51ca3be8c9bbafc4721e9971fa4a53ccc47c336d321fa1ab4783637180049db1d4394d3ced5827f5bd3c8dd1dfac750334dc03753157ba76073677158840014d712cf566832693d743db670d715e871a59e3d5b0d3a1ac729cfdb9b05b34429bd554745d0424400aa2090bc40ded18ddc405d03ccab5da69cf3854da78c8a14b1ab872a4a6cff6ba546b9cc31df553d9d4e4d944c630b3596d30eb8bff69e282fa98c1b5a7b803bed5a4860709b6398f71a963a0cfc4d265cbceca9
+ [user a] sending challenge token to user b
+   [air] message travelling: 28a7113d26dd8725e3d16afd69949880:432dccd6e51ca3be8c9bbafc4721e9971fa4a53ccc47c336d321fa1ab4783637180049db1d4394d3ced5827f5bd3c8dd1dfac750334dc03753157ba76073677158840014d712cf566832693d743db670d715e871a59e3d5b0d3a1ac729cfdb9b05b34429bd554745d0424400aa2090bc40ded18ddc405d03ccab5da69cf3854da78c8a14b1ab872a4a6cff6ba546b9cc31df553d9d4e4d944c630b3596d30eb8bff69e282fa98c1b5a7b803bed5a4860709b6398f71a963a0cfc4d265cbceca9
+ [user b] requesting response token with received challenge token
+   [api] sending challenge to backend: Bearer 58f73354c22e8072e3f454e5aeacb6db:9e12241d16a39c5163b7e97ff670a0084ed970151d42ec187453f7718c4f0b5609ce90077d88fe515ff9ac06ec3b113bf2e0d6b4702cc896b64511383d767ff7711655e269be1d937c12abeaf0d93058d6b1aa7643635da98981a993834cddc4f2eb6fb5bd8bcb2621a018b1cf5d7ab7211522aaafbc8b7b978831ab3c8bc991dd3274ebdfc44efb6a5417c667039083303512ba8638dcb13acde22d4ea386da
+   [api] challenge token: 28a7113d26dd8725e3d16afd69949880:432dccd6e51ca3be8c9bbafc4721e9971fa4a53ccc47c336d321fa1ab4783637180049db1d4394d3ced5827f5bd3c8dd1dfac750334dc03753157ba76073677158840014d712cf566832693d743db670d715e871a59e3d5b0d3a1ac729cfdb9b05b34429bd554745d0424400aa2090bc40ded18ddc405d03ccab5da69cf3854da78c8a14b1ab872a4a6cff6ba546b9cc31df553d9d4e4d944c630b3596d30eb8bff69e282fa98c1b5a7b803bed5a4860709b6398f71a963a0cfc4d265cbceca9
+   [api] response token generated: 83c906960554ce0e3894bcb3fde9a315:b5fd0311b1f898298fb5df8702dc5c05eb229fd86b8f6c1d858b8d1191c929d66ea261db183b033dce97f897ae64f87ba6d5817a5f63a9641d307b13364179a6cb392a0273ccc69e3647fd3d0afd7ec32aac2be7e237d3175b0602e43ff29960dad5320b474ca275155ac1c52a5ad038cff1e085aec0899f6a4f6e7daa664aa29a038be3b85958a14f85b174de7a56fbdaff165c808a2aed139a1f4500a1f6af0f549eb518a5cffab88673ae15bf41bc16666eba5933b71467a3fe31d30255c2d2d38f967bb31d7660bd115f25f4d8f8
+ [user b] sending response token to user a
+   [air] message travelling: 83c906960554ce0e3894bcb3fde9a315:b5fd0311b1f898298fb5df8702dc5c05eb229fd86b8f6c1d858b8d1191c929d66ea261db183b033dce97f897ae64f87ba6d5817a5f63a9641d307b13364179a6cb392a0273ccc69e3647fd3d0afd7ec32aac2be7e237d3175b0602e43ff29960dad5320b474ca275155ac1c52a5ad038cff1e085aec0899f6a4f6e7daa664aa29a038be3b85958a14f85b174de7a56fbdaff165c808a2aed139a1f4500a1f6af0f549eb518a5cffab88673ae15bf41bc16666eba5933b71467a3fe31d30255c2d2d38f967bb31d7660bd115f25f4d8f8
+ [user a] logging interaction with received response token
+   [api] sending response to backend: Bearer 206497cd28d9dfc107f0a7e5b259b4a8:dce90392b8c36c184fe88a846f002463c156be8f7ebf2cecae614fa47f8ba1e748f6f1e5a306c7b9b38e0b85ac146dafed898e86123a16da996dbd5feddc2d3cd7f7e5c684bab2719f8266b1c673d930e9eb3e45a52f00047bad2a2b3245e8837085c0e0c68ecce957969ed553f78034089515c7b909b56633553c778d607282c9325f4ebe1ecf1eaffb0af2521a5d14e2b7693cb85fd6b250a9320067643e23
+   [api] response token: 83c906960554ce0e3894bcb3fde9a315:b5fd0311b1f898298fb5df8702dc5c05eb229fd86b8f6c1d858b8d1191c929d66ea261db183b033dce97f897ae64f87ba6d5817a5f63a9641d307b13364179a6cb392a0273ccc69e3647fd3d0afd7ec32aac2be7e237d3175b0602e43ff29960dad5320b474ca275155ac1c52a5ad038cff1e085aec0899f6a4f6e7daa664aa29a038be3b85958a14f85b174de7a56fbdaff165c808a2aed139a1f4500a1f6af0f549eb518a5cffab88673ae15bf41bc16666eba5933b71467a3fe31d30255c2d2d38f967bb31d7660bd115f25f4d8f8
+   [api] response token submitted
+ [Online Approach] retrieving status after interaction
+ [user a] requesting status
+   [api] retrieving user status with auth: Bearer 206497cd28d9dfc107f0a7e5b259b4a8:dce90392b8c36c184fe88a846f002463c156be8f7ebf2cecae614fa47f8ba1e748f6f1e5a306c7b9b38e0b85ac146dafed898e86123a16da996dbd5feddc2d3cd7f7e5c684bab2719f8266b1c673d930e9eb3e45a52f00047bad2a2b3245e8837085c0e0c68ecce957969ed553f78034089515c7b909b56633553c778d607282c9325f4ebe1ecf1eaffb0af2521a5d14e2b7693cb85fd6b250a9320067643e23
+   [api] status retrieved
+   [api] risk: 1
+   [api] message: high risk
+ [user b] requesting status
+   [api] retrieving user status with auth: Bearer 58f73354c22e8072e3f454e5aeacb6db:9e12241d16a39c5163b7e97ff670a0084ed970151d42ec187453f7718c4f0b5609ce90077d88fe515ff9ac06ec3b113bf2e0d6b4702cc896b64511383d767ff7711655e269be1d937c12abeaf0d93058d6b1aa7643635da98981a993834cddc4f2eb6fb5bd8bcb2621a018b1cf5d7ab7211522aaafbc8b7b978831ab3c8bc991dd3274ebdfc44efb6a5417c667039083303512ba8638dcb13acde22d4ea386da
+   [api] status retrieved
+   [api] risk: 0.999999000001
+   [api] message: high risk
+ [Offline Approach] starting demo
+ [user a] registering and authorizing
+   [external] verifying user identity on external authorization service
+   [external] user has been authorized
+   [external] user uuid: 169
+   [external] user register token: e7e5877b497fc623dc4275a7cf3cf598b4149f10b3cb68746a915212836c7c88123f2a2c1f036653641e9f4dec2aef60
+   [api] authorizing user for first time
+   [api] using token supplied by when user was identified: e7e5877b497fc623dc4275a7cf3cf598b4149f10b3cb68746a915212836c7c88123f2a2c1f036653641e9f4dec2aef60
+   [api] user has been authorized and given auth token: 08dd73f100fbf59782cbe2b8cab3cde7:34d31d76fdc3d643c7645566bf4f786721325cc627430628dd0e171b131c54347a5e8c6c91cf14fa321405a29ccc81a95a0a528b302ba0409c117ed74c0061bf506087d9cba5af0d49c17c16cdd26039392797b943a947a66edf280c0529b1c59112def749ab26b351bdae3188fd905a837080daed75c14c2f0d104e2d489135ec90780efae362fd282e4abadb6eabadb3ccbabde6a04de393e0759fa351de1b
+ [user b] registering and authorizing
+   [external] verifying user identity on external authorization service
+   [external] user has been authorized
+   [external] user uuid: 170
+   [external] user register token: f189be9fa480c9263b2cb22e8f378cbbfc1fa237894eb2399817fb55435e5ed0bc4115820f117fcf5d8e922b0713e0e5
+   [api] authorizing user for first time
+   [api] using token supplied by when user was identified: f189be9fa480c9263b2cb22e8f378cbbfc1fa237894eb2399817fb55435e5ed0bc4115820f117fcf5d8e922b0713e0e5
+   [api] user has been authorized and given auth token: 305e45405336068280da1c75722614ef:6dbb034255c3e183e7763a0192aac9382e444d4b12709ff778da00686e4fb4c53ce978ddf1c07e454855833ce96c2b4a98c705cf0aa78f718bb9225c4957e77302ec3db04bff772c8a4fbb098e5893f8fc1c71d6024e3118b0dbae56d0904dc6a58df03264297903fda8aee1f6fa4811fcdae70cec4d448a9aca0d7952c855c5496dd7c703f3f05fa377c9b4a89e6385f71f6cb274736580d657ebda303ee8af
+ [Offline Approach] retrieving status before interaction
+ [user a] requesting status
+   [api] retrieving user status with auth: Bearer 08dd73f100fbf59782cbe2b8cab3cde7:34d31d76fdc3d643c7645566bf4f786721325cc627430628dd0e171b131c54347a5e8c6c91cf14fa321405a29ccc81a95a0a528b302ba0409c117ed74c0061bf506087d9cba5af0d49c17c16cdd26039392797b943a947a66edf280c0529b1c59112def749ab26b351bdae3188fd905a837080daed75c14c2f0d104e2d489135ec90780efae362fd282e4abadb6eabadb3ccbabde6a04de393e0759fa351de1b
+   [api] status retrieved
+   [api] risk: 0
+   [api] message: safe
+ [user b] requesting status
+   [api] retrieving user status with auth: Bearer 305e45405336068280da1c75722614ef:6dbb034255c3e183e7763a0192aac9382e444d4b12709ff778da00686e4fb4c53ce978ddf1c07e454855833ce96c2b4a98c705cf0aa78f718bb9225c4957e77302ec3db04bff772c8a4fbb098e5893f8fc1c71d6024e3118b0dbae56d0904dc6a58df03264297903fda8aee1f6fa4811fcdae70cec4d448a9aca0d7952c855c5496dd7c703f3f05fa377c9b4a89e6385f71f6cb274736580d657ebda303ee8af
+   [api] status retrieved
+   [api] risk: 0
+   [api] message: safe
+ [Offline Approach] user b gets positively diagnosed
+ [manual] setting user b status to positive
+ [user b] confirming status
+   [api] retrieving user status with auth: Bearer 305e45405336068280da1c75722614ef:6dbb034255c3e183e7763a0192aac9382e444d4b12709ff778da00686e4fb4c53ce978ddf1c07e454855833ce96c2b4a98c705cf0aa78f718bb9225c4957e77302ec3db04bff772c8a4fbb098e5893f8fc1c71d6024e3118b0dbae56d0904dc6a58df03264297903fda8aee1f6fa4811fcdae70cec4d448a9aca0d7952c855c5496dd7c703f3f05fa377c9b4a89e6385f71f6cb274736580d657ebda303ee8af
+   [api] status retrieved
+   [api] risk: 1
+   [api] message: high risk
+ [Offline Approach] creating beacon keys
+ [beacon 1] generating key
+   [api] retrieving factory unique generated identifier
+ [beacon 2] generating key
+   [api] retrieving factory unique generated identifier
+ [user a] registering beacon to user
+   [api] registering beacon: Bearer 08dd73f100fbf59782cbe2b8cab3cde7:34d31d76fdc3d643c7645566bf4f786721325cc627430628dd0e171b131c54347a5e8c6c91cf14fa321405a29ccc81a95a0a528b302ba0409c117ed74c0061bf506087d9cba5af0d49c17c16cdd26039392797b943a947a66edf280c0529b1c59112def749ab26b351bdae3188fd905a837080daed75c14c2f0d104e2d489135ec90780efae362fd282e4abadb6eabadb3ccbabde6a04de393e0759fa351de1b
+   [api] beacon key: 9b1c1354b57a11023dc76e146c1bd82572d38e8910d718a32597cf34f4925e21c1b6a1996518e8e5ff8a977b4c035579
+   [api] Successfully added beacon
+ [user b] registering beacon to user
+   [api] registering beacon: Bearer 305e45405336068280da1c75722614ef:6dbb034255c3e183e7763a0192aac9382e444d4b12709ff778da00686e4fb4c53ce978ddf1c07e454855833ce96c2b4a98c705cf0aa78f718bb9225c4957e77302ec3db04bff772c8a4fbb098e5893f8fc1c71d6024e3118b0dbae56d0904dc6a58df03264297903fda8aee1f6fa4811fcdae70cec4d448a9aca0d7952c855c5496dd7c703f3f05fa377c9b4a89e6385f71f6cb274736580d657ebda303ee8af
+   [api] beacon key: 9d0d9450c22feb12113808a9f13f4e4ade21411149a58d2929269c68a5628b2df8b7123b96cd1b33b41bc8817e74c071
+   [api] Successfully added beacon
+ [beacon 1] transmitting token
+   [beacon] beacon requesting response token at 1
+   [beacon] beacon key: 9b1c1354b57a11023dc76e146c1bd82572d38e8910d718a32597cf34f4925e21c1b6a1996518e8e5ff8a977b4c035579
+   [beacon] retrieved beacon response token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjEsImJlYWNvbktleSI6MTQ3NzU0MDI0NiwiaWF0IjoxNTg5NjU3OTM0fQ.yAn4x7jh_j29sPJicTWN65g0VXEJjc4V_myAKNaw5IY
+   [air] message travelling: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0aW1lc3RhbXAiOjEsImJlYWNvbktleSI6MTQ3NzU0MDI0NiwiaWF0IjoxNTg5NjU3OTM0fQ.yAn4x7jh_j29sPJicTWN65g0VXEJjc4V_myAKNaw5IY
+ [user b] beacon token received, sending to database
+   [api] sending interaction to backend: Bearer 305e45405336068280da1c75722614ef:6dbb034255c3e183e7763a0192aac9382e444d4b12709ff778da00686e4fb4c53ce978ddf1c07e454855833ce96c2b4a98c705cf0aa78f718bb9225c4957e77302ec3db04bff772c8a4fbb098e5893f8fc1c71d6024e3118b0dbae56d0904dc6a58df03264297903fda8aee1f6fa4811fcdae70cec4d448a9aca0d7952c855c5496dd7c703f3f05fa377c9b4a89e6385f71f6cb274736580d657ebda303ee8af
+   [api] successfully added interaction
+ [Offline Approach] retrieving status after interaction
+ [user a] requesting status
+   [api] retrieving user status with auth: Bearer 08dd73f100fbf59782cbe2b8cab3cde7:34d31d76fdc3d643c7645566bf4f786721325cc627430628dd0e171b131c54347a5e8c6c91cf14fa321405a29ccc81a95a0a528b302ba0409c117ed74c0061bf506087d9cba5af0d49c17c16cdd26039392797b943a947a66edf280c0529b1c59112def749ab26b351bdae3188fd905a837080daed75c14c2f0d104e2d489135ec90780efae362fd282e4abadb6eabadb3ccbabde6a04de393e0759fa351de1b
+   [api] status retrieved
+   [api] risk: 1
+   [api] message: high risk
+ [user b] requesting status
+   [api] retrieving user status with auth: Bearer 305e45405336068280da1c75722614ef:6dbb034255c3e183e7763a0192aac9382e444d4b12709ff778da00686e4fb4c53ce978ddf1c07e454855833ce96c2b4a98c705cf0aa78f718bb9225c4957e77302ec3db04bff772c8a4fbb098e5893f8fc1c71d6024e3118b0dbae56d0904dc6a58df03264297903fda8aee1f6fa4811fcdae70cec4d448a9aca0d7952c855c5496dd7c703f3f05fa377c9b4a89e6385f71f6cb274736580d657ebda303ee8af
+   [api] status retrieved
+   [api] risk: 0.999999000001
+   [api] message: high risk
