@@ -328,8 +328,8 @@ We are confident that given that the secret keys that are stored on the server a
 ## Work Distribution
 
 - Chaikalis Marinos: database + API
-- Chelakis Konstantinos Marios: frontend + python simulation
-- Pitoskas Giannis: backend
+- Chelakis Konstantinos Marios: frontend + database + simulation 
+- Pitoskas Giannis: backend + frontend + simulation
 
 
 ## Sources
